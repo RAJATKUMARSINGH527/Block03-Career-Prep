@@ -1,0 +1,25 @@
+<!-- vanilla.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vanilla DOM</title>
+</head>
+<body style="font-family: Arial; padding: 20px;">
+  <h2 id="vanillaTitle">Vanilla Title</h2>
+  <p id="vanillaCount">Vanilla DOM updates: 0</p>
+  <button onclick="changeVanillaTitle()">Change Title (Vanilla JS)</button>
+
+  <script>
+    let vanillaUpdateCount = 0;
+
+    function changeVanillaTitle() {
+      vanillaUpdateCount++;
+      const title = document.getElementById('vanillaTitle');
+      const count = document.getElementById('vanillaCount');
+      title.textContent = "Vanilla Updated Title " + vanillaUpdateCount;
+      count.textContent = "Vanilla DOM updates: " + vanillaUpdateCount;
+    }
+  </script>
+</body>
+</html>

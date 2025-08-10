@@ -1,0 +1,26 @@
+
+<!-- ✅ 2. Declarative Approach (React + ReactDOM) -->
+<!-- 💻 Code (JSX/React) -->
+
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Declarative Hello</title>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/javascript">
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+
+    // Declarative way - just describe what you want to see
+    root.render(
+      React.createElement('p', null, 'Hello, World!')
+    );
+  </script>
+</body>
+</html>
